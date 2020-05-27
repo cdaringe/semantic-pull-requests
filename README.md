@@ -1,5 +1,12 @@
 # Semantic Pull Requests
 
+**WARNING**: this is a fork of https://github.com/zeke/semantic-pull-requests, solely for publishing
+to npm. this repo should be removed when https://github.com/zeke/semantic-pull-requests/issues/99
+is closed with adequate resolution. this package is published such that you may pull in
+semantic-pull-request handlers onto a consolidated probot instance, vs a standalone probot
+server that executes _only_ semantic-pull-request functionality. for example, you may
+have a server running stalebot, semantic-pull-requests, or other probot apps.
+
 > GitHub status check that ensures your pull requests follow the Conventional Commits spec
 
 Using [semantic-release](https://github.com/semantic-release/semantic-release)
@@ -10,14 +17,14 @@ on your repos to ensure your pull requests are semantic before you merge them.
 
 ## How it works
 
-👮 Note! The default behavior of this bot is not to police all commit messages, 
-but rather to ensure that every PR has **just enough semantic information** to be 
+👮 Note! The default behavior of this bot is not to police all commit messages,
+but rather to ensure that every PR has **just enough semantic information** to be
 able to trigger a release when appropriate. The goal is to gather this semantic
-information in a way that doesn't make life harder for project contributors, 
+information in a way that doesn't make life harder for project contributors,
 especially newcomers who may not know how to amend their git commit history.
 
-By default, only the PR title OR at least one 
-commit messsage needs to have semantic prefix. If you wish to change this 
+By default, only the PR title OR at least one
+commit messsage needs to have semantic prefix. If you wish to change this
 behavior, see [configuration](#configuration) section below.
 
 Scenario | Status | Status Check Message
@@ -54,8 +61,8 @@ Edit the PR title by adding a semantic prefix like `fix: ` or `feat: ` or any ot
 
 By default, no configuration is necessary.
 
-If you wish to override some 
-behaviors, you can add a `semantic.yml` file to your `.github` directory with 
+If you wish to override some
+behaviors, you can add a `semantic.yml` file to your `.github` directory with
 the following optional settings:
 
 ```yml
