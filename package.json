@@ -1,6 +1,6 @@
 {
   "name": "@dino-dna/semantic-pull-requests",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "GitHub status check that ensures your pull requests follow the Conventional Commits spec",
   "main": "index.js",
   "files": [
@@ -31,7 +31,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "conventional-commit-types": "^3.0.0",
-    "parse-commit-message": "^4.0.0-canary.20",
+    "parse-commit-message": "^3",
     "probot": "^7.5.3",
     "probot-config": "^1.0.0"
   },
