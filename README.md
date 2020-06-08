@@ -125,6 +125,11 @@ allowMergeCommits: true
 allowRevertCommits: true
 ```
 
+```yml
+# Require scopes included in messege (commit header or title)
+allowEmptyScope: false # default true
+```
+
 ## License
 
 [Apache 2.0](LICENSE)
