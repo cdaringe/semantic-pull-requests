@@ -1,6 +1,6 @@
 {
   "name": "@dino-dna/semantic-pull-requests",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "GitHub status check that ensures your pull requests follow the Conventional Commits spec",
   "main": "index.js",
   "files": [
